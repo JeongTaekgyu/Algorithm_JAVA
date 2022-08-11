@@ -1,4 +1,4 @@
-package Baekjoon.Level_1;
+package Programmers.Level_1;
 
 import java.util.*;
 

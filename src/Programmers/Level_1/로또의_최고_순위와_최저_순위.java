@@ -1,4 +1,4 @@
-package Baekjoon.Level_1;
+package Programmers.Level_1;
 
 public class 로또의_최고_순위와_최저_순위 {
 
@@ -45,13 +45,12 @@ public class 로또의_최고_순위와_최저_순위 {
     }
 
     public static void main(String[] args) {
-        int[] lottos = {45, 4, 35, 20, 3, 9};
+        int[] lottos = {45, 4, 0, 0, 3, 9};
         int[] win_nums = {20, 9, 3, 45, 4, 35};
         int[] answer;
 
         answer = solution(lottos, win_nums);
         for(int ans : answer)
             System.out.println(ans);
-
     }
 }
