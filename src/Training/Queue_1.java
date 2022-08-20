@@ -17,8 +17,9 @@ public class Queue_1 {
         System.out.println("queue1 : "+ queue1);
 
         // 값 삭제 poll, remove
-        //queue1.poll();  // 첫 번째 값을 반환하고 제거 비어있다면 null
+        //queue1.poll();  // 큐 맨 앞에 있는 값을 반환하고 제거 비어있다면 null
         System.out.println(queue1.poll());
+        //queue1.remove() // 큐 맨 앞에 있는 값을 반환하고 삭제 큐가 비어있는 경우 NoSuchElementException 발생
         System.out.println(queue1.remove());
         System.out.println("queue1 : "+ queue1);
 
@@ -47,5 +48,11 @@ public class Queue_1 {
 
         // size
         System.out.println(queue1.size());
+
+        queue1.add(4);
+        queue1.add(5);
+        queue1.add(6);
+        System.out.println(queue1);
+
     }
 }
