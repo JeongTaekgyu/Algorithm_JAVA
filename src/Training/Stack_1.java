@@ -25,7 +25,10 @@ public class Stack_1 {
         stack.push(5);
         stack.push(3);
         // stack 최상단값 반환 peek
-        System.out.println("stack.peek() : " + stack.peek());
+        Integer peekValue = stack.peek();
+        System.out.println("peekValue : " + peekValue);
+        //System.out.println("stack.peek() : " + stack.peek());
+        System.out.println("stack : " +stack);
 
         // stack이 비어있는지 확인
         if(stack.empty())
@@ -45,6 +48,8 @@ public class Stack_1 {
         System.out.println(stack.elementAt(1));
         System.out.println(stack.elementAt(stack.size()-1));
 
+        stack.clear();
+        stack.peek();
 
     }
 
