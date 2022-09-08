@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class _1260_DFS와_BFS {
-
+    // ★★★ DFS와 BFS에서 방문 표시 개념이 다르니까 주의하자 ★★★
     static int map[][];
     static boolean[] visited;  // 방문 여부를 검사할 배열
     static int n, m, v;
@@ -24,14 +24,14 @@ public class _1260_DFS와_BFS {
     public static void bfs(int v){
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(v);
-        visited[v] = false;
+        visited[v] = false; // DFS에서 방문한 곳을 true 체크했기 때문에 반대로 체크하자
 
         while (!queue.isEmpty()){
             int cur_vertex = queue.poll();
             System.out.print(cur_vertex+" ");
 
             for(int i = 1; i <= n; i++){
-                // 연결돼있고 방문하지 않았으면 queue에 추가하고 방문표시한다.
+                // bfs는 방문한곳을 false로 체크했기 때문에 여기선 visited[i] == true 로 체크하자
                 if(map[cur_vertex][i] == 1 && visited[i] == true){
                     queue.offer(i);
                     visited[i] = false;
