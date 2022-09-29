@@ -14,12 +14,21 @@ public class _1543_문서_검색 {
         String search = br.readLine();
         int cnt = 0;
 
+        // 방법1
         document = document.replaceAll(search,"1");
 
         for(int i = 0; i < document.length(); i++){
             if(document.charAt(i) == '1')
                 cnt++;
         }
+
+        // 방법2
+        /*int documentSize = document.length();
+        int searchSize = search.length();
+
+        document = document.replaceAll(search, "");
+        cnt = ((documentSize - document.length()) / searchSize);
+         */
 
         // 시간 초과 버전
         /*int ind = 0;
