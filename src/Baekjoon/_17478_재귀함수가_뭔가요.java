@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class _17478_재함수가_뭔가요 {
+public class _17478_재귀함수가_뭔가요 {
     static String underBar = "";
 
     public static void main(String[] args) throws IOException {
